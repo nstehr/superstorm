@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<style>
+
+
+	.axis path, .axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+
+	</style>
+	
+    <title>Hurricane Sandy</title>
+    
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type='text/javascript' src='static/libs/d3.js'></script>
+	<script type="text/javascript" src="static/libs/knockout-2.2.0.js"></script>
+	<script type="text/javascript" src="static/libs/date.js"></script>
+	<script type="text/javascript" src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/libs/bootstrap-lightbox.js"></script>
+	
+	
+	<link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="static/libs/bootstrap-lightbox.css" rel="stylesheet">
+
+
+</head>
+<div class="container">
+
+    <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="50">
+		
+		<div class="lightbox fade" id="picLightbox" style="display: none;">
+			<div class='lightbox-content'>
+				<img id="lightboxImg" src="http://farm9.staticflickr.com/8330/8139720547_bbf71edd06_c.jpg">
+			</div>
+		</div>
+		
+		<div class="row">
+		  <span class="span12"><h1>Hurricane Sandy</h1></span>
+		</div>
+		
+		<div class="row">
+			<div class="span12">
+			<p><h2 data-bind="text: date"></h2></p>
+			</div>
+		</div>
+		
+<div class="row">
+	<div id="map" class="span12"></div>
+</div>
+
+<script type='text/javascript' src='static/visualize.js'></script>
+</body>
+</div>
+
+</html>

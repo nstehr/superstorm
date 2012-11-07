@@ -1,0 +1,44 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+
+
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102518, "YEAR": 2012, "MONTH": "OCT", "DAY": 25, "HHMM": "1800", "TAU": 0, "MSLP": 963, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane2", "INTENSITY": 90.0, "SS": 2, "LAT": 23.6, "LON": -75.3 }, "geometry": { "type": "Point", "coordinates": [ -75.300003051757812, 23.600000381469727 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102600, "YEAR": 2012, "MONTH": "OCT", "DAY": 26, "HHMM": "0000", "TAU": 0, "MSLP": 965, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane2", "INTENSITY": 85.0, "SS": 2, "LAT": 24.8, "LON": -75.8 }, "geometry": { "type": "Point", "coordinates": [ -75.800003051757812, 24.799999237060547 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102606, "YEAR": 2012, "MONTH": "OCT", "DAY": 26, "HHMM": "0600", "TAU": 0, "MSLP": 968, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 75.0, "SS": 1, "LAT": 25.8, "LON": -76.5 }, "geometry": { "type": "Point", "coordinates": [ -76.5, 25.799999237060547 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102612, "YEAR": 2012, "MONTH": "OCT", "DAY": 26, "HHMM": "1200", "TAU": 0, "MSLP": 970, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 70.0, "SS": 1, "LAT": 26.4, "LON": -76.9 }, "geometry": { "type": "Point", "coordinates": [ -76.900001525878906, 26.399999618530273 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102618, "YEAR": 2012, "MONTH": "OCT", "DAY": 26, "HHMM": "1800", "TAU": 0, "MSLP": 971, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 27.0, "LON": -77.1 }, "geometry": { "type": "Point", "coordinates": [ -77.099998474121094, 27.0 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102700, "YEAR": 2012, "MONTH": "OCT", "DAY": 27, "HHMM": "0000", "TAU": 0, "MSLP": 969, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 27.4, "LON": -77.2 }, "geometry": { "type": "Point", "coordinates": [ -77.199996948242188, 27.399999618530273 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102706, "YEAR": 2012, "MONTH": "OCT", "DAY": 27, "HHMM": "0600", "TAU": 0, "MSLP": 969, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 28.1, "LON": -76.9 }, "geometry": { "type": "Point", "coordinates": [ -76.900001525878906, 28.100000381469727 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102712, "YEAR": 2012, "MONTH": "OCT", "DAY": 27, "HHMM": "1200", "TAU": 0, "MSLP": 956, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 28.8, "LON": -76.6 }, "geometry": { "type": "Point", "coordinates": [ -76.599998474121094, 28.799999237060547 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102718, "YEAR": 2012, "MONTH": "OCT", "DAY": 27, "HHMM": "1800", "TAU": 0, "MSLP": 961, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 29.8, "LON": -75.6 }, "geometry": { "type": "Point", "coordinates": [ -75.599998474121094, 29.799999237060547 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102800, "YEAR": 2012, "MONTH": "OCT", "DAY": 28, "HHMM": "0000", "TAU": 0, "MSLP": 960, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 30.5, "LON": -74.7 }, "geometry": { "type": "Point", "coordinates": [ -74.699996948242188, 30.5 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102806, "YEAR": 2012, "MONTH": "OCT", "DAY": 28, "HHMM": "0600", "TAU": 0, "MSLP": 960, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 31.4, "LON": -73.9 }, "geometry": { "type": "Point", "coordinates": [ -73.900001525878906, 31.399999618530273 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102812, "YEAR": 2012, "MONTH": "OCT", "DAY": 28, "HHMM": "1200", "TAU": 0, "MSLP": 951, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 32.1, "LON": -73.1 }, "geometry": { "type": "Point", "coordinates": [ -73.099998474121094, 32.099998474121094 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102818, "YEAR": 2012, "MONTH": "OCT", "DAY": 28, "HHMM": "1800", "TAU": 0, "MSLP": 952, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 32.8, "LON": -71.9 }, "geometry": { "type": "Point", "coordinates": [ -71.900001525878906, 32.799999237060547 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102900, "YEAR": 2012, "MONTH": "OCT", "DAY": 29, "HHMM": "0000", "TAU": 0, "MSLP": 950, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 65.0, "SS": 1, "LAT": 33.9, "LON": -71.0 }, "geometry": { "type": "Point", "coordinates": [ -71.0, 33.900001525878906 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102906, "YEAR": 2012, "MONTH": "OCT", "DAY": 29, "HHMM": "0600", "TAU": 0, "MSLP": 948, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 75.0, "SS": 1, "LAT": 35.2, "LON": -70.5 }, "geometry": { "type": "Point", "coordinates": [ -70.5, 35.200000762939453 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102912, "YEAR": 2012, "MONTH": "OCT", "DAY": 29, "HHMM": "1200", "TAU": 0, "MSLP": 946, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 80.0, "SS": 1, "LAT": 36.7, "LON": -70.9 }, "geometry": { "type": "Point", "coordinates": [ -70.900001525878906, 36.700000762939453 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012102918, "YEAR": 2012, "MONTH": "OCT", "DAY": 29, "HHMM": "1800", "TAU": 0, "MSLP": 940, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Hurricane1", "INTENSITY": 80.0, "SS": 1, "LAT": 38.3, "LON": -73.0 }, "geometry": { "type": "Point", "coordinates": [ -73.0, 38.299999237060547 ] } }
+,
+{ "type": "Feature", "properties": { "STORMNAME": "SANDY", "DTG": 2012103000, "YEAR": 2012, "MONTH": "OCT", "DAY": 30, "HHMM": "0000", "TAU": 0, "MSLP": 946, "BASIN": "AL", "STORMNUM": 18, "STORMTYPE": "Post-Tropical", "INTENSITY": 70.0, "SS": 0, "LAT": 39.5, "LON": -74.5 }, "geometry": { "type": "Point", "coordinates": [ -74.5, 39.5 ] } }
+
+]
+}
