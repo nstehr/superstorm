@@ -20,3 +20,8 @@ Nathan Stehr - [laserdeathstehr.com](http://laserdeathstehr.com)
 * Hurricane Sandy Data: [National Hurricane Center](http://www.nhc.noaa.gov/gis/archive_besttrack.php)
 * Images from flickr
 
+##TODO
+
+* Fix back keyboard action
+* Tweak visual appearance
+

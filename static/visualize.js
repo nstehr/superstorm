@@ -291,7 +291,7 @@ function renderMap(usa,hurricaneRadii,hurricanePoints){
 	 //move the position of the storm and the selector back   
 	 if (e.keyCode == 37) { 
 	       if(i -1 >= 0){
-			
+			//TODO: fix back arrow key action
 			i--;
 			updateHurricanePosition(timeList[i],pointsGroup,radiiGroup,"back");
 				var rect = rectGroup.select("rect");
