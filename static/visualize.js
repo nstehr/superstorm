@@ -10,6 +10,7 @@ function HurricaneModel() {
     this.day = ko.observable("25");
     this.month = ko.observable("OCT");
     this.timeOfDay = ko.observable("1200");
+    this.imagesLoading = ko.observable(true);
 
 
 	this.date = ko.computed(function() {
@@ -104,11 +105,11 @@ function renderMap(usa,hurricaneRadii,hurricanePoints){
 	
 	//set up a timeline on the bottom of the visualization
 	var scaleGroup = viz.append("g");
-	scaleGroup.attr("transform", "translate(0," + (chartHeight*0.95) + ")")
+	scaleGroup.attr("transform", "translate(0," + (chartHeight*0.90) + ")")
 		
 	//create a little box to move along the scale
 	var rectGroup = viz.append("g");
-	var selectorWidth = 20;
+	var selectorWidth = 15;
 	var selectorHeight = 45;
 	
 	var minTime = parseDate(timeList[0]);
@@ -123,8 +124,8 @@ function renderMap(usa,hurricaneRadii,hurricanePoints){
 				    .scale(x)
 				    .orient("bottom")
 					.ticks(d3.time.days, 1)
-					.tickSubdivide(3).tickSize(-30,-15,-30);
-	
+					.tickSubdivide(3).tickSize(30,15,-30);
+
     var i = 0;
 	updateHurricanePosition(timeList[i],pointsGroup,radiiGroup,"forward");
 	
@@ -163,18 +164,18 @@ function renderMap(usa,hurricaneRadii,hurricanePoints){
 		//TODO: figure out the ticks/subdivide that looks nice for different zoom levels
 		if(timeDiff <= (1 * 60 * 60)){
 			xAxis.ticks(d3.time.minutes, 15)
-				.tickSubdivide(3).tickSize(-30,-15,-30);
+				.tickSubdivide(3).tickSize(30,15,-30);
 		}
 		
 		
 		else if(timeDiff <= (24 * 60 * 60)){
 		    xAxis.ticks(d3.time.hours, 1)
-			    .tickSubdivide(1).tickSize(-30,-15,-30);
+			    .tickSubdivide(1).tickSize(30,15,-30);
 		}
 		
 		else if(timeDiff <= (48 * 60 * 60)){
 		    xAxis.ticks(d3.time.hours, 6)
-			    .tickSubdivide(3).tickSize(-30,-15,-30);
+			    .tickSubdivide(3).tickSize(30,15,-30);
 		}
 		//update the scale
 		scaleGroup.call(xAxis);
@@ -191,13 +192,13 @@ function renderMap(usa,hurricaneRadii,hurricanePoints){
 		//fade out the non-selected images
 		outofRangeImages.transition(500).attr("opacity",0);
 		//first slide the images up
-        remainingImages.transition(500).attr("y",(chartHeight*0.95)-40)
+        remainingImages.transition(500).attr("y",(chartHeight*0.90)-40)
 			//next slide the images over to their new x position
 			.each("end",function(d,i){
 				d3.select(this).transition(500).attr("x",x(d.takenDate))
 					//finally slide them back dowm
 					.each("end",function(d,i){
-						d3.select(this).transition(500).attr("y",(chartHeight*0.95)-30);
+						d3.select(this).transition(500).attr("y",(chartHeight*0.90)-30);
 					});
 			});
 		
@@ -212,10 +213,12 @@ function renderMap(usa,hurricaneRadii,hurricanePoints){
 	//add the selector to the timeline
 	rectGroup.append("rect")
 		.attr("x",x(parseDate(timeList[i]))-10)
-		.attr("y", (chartHeight*0.95)-selectorHeight)
+		.attr("y", (chartHeight*0.90)-selectorHeight)
 		.attr("height", selectorHeight)
 		.attr("width", selectorWidth)
-		.attr("fill","orange")
+		.attr("rx",5)
+		.attr("ry",5)
+		.attr("fill","#C03866")
 		.attr("opacity",0.75)
 		.call(dragBox);
 		
@@ -315,7 +318,7 @@ function renderMap(usa,hurricaneRadii,hurricanePoints){
 	       	x.domain([minTime,maxTime])
 	       	 .range([0, chartWidth*0.95]);
 	       	xAxis.ticks(d3.time.days, 1)
-	       	xAxis.tickSubdivide(3).tickSize(-30,-15,-30);
+	       	xAxis.tickSubdivide(3).tickSize(30,15,-30);
 	       	scaleGroup.call(xAxis);
 	        rect.attr("x",x(time));
 	        imageGroup.selectAll("image").remove();
@@ -406,7 +409,7 @@ function addPhotos(timelinePhotos,imageGroup,x){
 	    .data(timelinePhotos)
 		.enter().append("image")
 		.attr("x",function(d){return x(d.takenDate)-(width/2);})
-		.attr("y",(chartHeight*0.95)-40)
+		.attr("y",(chartHeight*0.90)-40)
 		.attr("width",width)
 		.attr("height",height)
 		.attr("xlink:href",function(d){return d.thumbUrl;})
@@ -419,9 +422,11 @@ function addPhotos(timelinePhotos,imageGroup,x){
 		.each("end",function(d,i){
 			d3.select(this).transition()
 			.delay(function(d1, index) {return i* 10; })
-			.duration(500).attr("y",(chartHeight*0.95)-30);
+			.duration(500).attr("y",(chartHeight*0.90)-30);
 		});
 		
+		//hide the loading text
+		viewModel.imagesLoading(false);
 }
 
 

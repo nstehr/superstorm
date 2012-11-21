@@ -5,12 +5,29 @@
 	<style>
 
 
-	.axis path, .axis line {
+	.axis path{
 	  fill: none;
 	  stroke: #000;
 	  shape-rendering: crispEdges;
 	}
-
+	
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+	
+	.axis text {
+		font-family: 'Open Sans', sans-serif;
+	}
+	
+	.axis line.tick.minor{
+		fill: none;
+		shape-rendering: crispEdges;
+        stroke: rgb(142, 153, 153);
+	}
+	
+	
 	</style>
 	
     <title>Hurricane Sandy</title>
@@ -27,6 +44,7 @@
 	<link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
 	<link href="static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="static/libs/bootstrap-lightbox.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -40,6 +58,8 @@
 			</div>
 		</div>
 		
+	
+		
 		<div class="row">
 		  <span class="span12"><h1>Hurricane Sandy</h1></span>
 		</div>
@@ -50,8 +70,22 @@
 			</div>
 		</div>
 		
+		<div class="row">
+				<div class="span12" data-bind="visible: imagesLoading">
+				    <h3><em>Loading images from flickr.....</em></h3>
+				</div>
+		</div>
+		
 <div class="row">
 	<div id="map" class="span12"></div>
+</div>
+
+<div class="row">
+	<div class="span12">
+		<p><em>Use left and right arrows to move along the timeline</em></p>
+		<p><em>Click and drag the position indicator to zoom in on the timeline</em></p>
+		<p><em>Press the up arrow to unzoom</em></p>
+	</div>
 </div>
 
 <script type='text/javascript' src='static/visualize.js'></script>
